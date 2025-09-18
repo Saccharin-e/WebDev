@@ -1,12 +1,9 @@
-/* GaeaGrow - Main Stylesheet */
-
-/* --- 1. Global Styles & Variables --- */
 :root {
-    --primary-color: #2c6b2f; /* Deep, earthy green */
-    --secondary-color: #f4f2e8; /* Light beige/cream */
+    --primary-color: #2c6b2f; 
+    --secondary-color: #f4f2e8;
     --dark-text-color: #333333;
     --light-text-color: #ffffff;
-    --accent-color: #e8a87c; /* Soft terracotta accent */
+    --accent-color: #e8a87c; 
     --font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --container-width: 1100px;
     --shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -49,7 +46,6 @@ img {
     display: block;
 }
 
-/* --- 2. Header & Navigation --- */
 header {
     background-color: var(--light-text-color);
     box-shadow: var(--shadow);
@@ -132,7 +128,7 @@ nav a:hover, nav a.active {
     transform: translateY(-3px);
 }
 
-/* --- 4. Product Showcase --- */
+
 .product-section {
     padding: 4rem 0;
 }
@@ -177,7 +173,7 @@ nav a:hover, nav a.active {
     margin-top: 1rem;
 }
 
-/* --- 5. About & Contact Pages --- */
+
 .content-page {
     padding: 4rem 0;
     background-color: var(--secondary-color);
@@ -229,7 +225,7 @@ nav a:hover, nav a.active {
     cursor: pointer;
 }
 
-/* --- 6. Footer --- */
+
 footer {
     background-color: var(--dark-text-color);
     color: var(--light-text-color);
@@ -237,7 +233,6 @@ footer {
     padding: 2rem 0;
 }
 
-/* --- 7. Responsive Design --- */
 @media (max-width: 768px) {
     h2 { font-size: 2rem; }
     #hero h2 { font-size: 2.5rem; }
@@ -248,7 +243,6 @@ footer {
     }
 }
 
-/* --- 8. Page Load Animation --- */
 body {
     animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
