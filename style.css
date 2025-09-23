@@ -1,30 +1,24 @@
 :root{
   --container-width:1100px;
   --font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-  --bg:#fbfaf7; 
-  --panel:#fff8f2; 
+  --bg:#fbfaf7;
+  --panel:#fff8f2;
   --text:#2b2b2b;
   --muted:rgba(43,43,43,0.6);
-  --primary:#d97706; /* warm orange */
+  --primary:#d97706;
   --accent:#f97316;
   --shadow:0 10px 30px rgba(15,15,15,0.06);
   --card-bg:#fff;
 }
 
-/* Reset + helpers */
 *{box-sizing:border-box;margin:0;padding:0}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .container{max-width:var(--container-width);margin:0 auto;padding:0 1.25rem}
 
-/* Base */
-body{font-family:var(--font-family);line-height:1.6;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
-
-/* Typography */
 h1,h2,h3,h4{font-weight:700}
 h2{font-size:2rem;margin-bottom:.6rem;text-align:center}
 
-/* Header */
 header{background:var(--panel);padding:1rem 0;position:sticky;top:0;z-index:1000;box-shadow:var(--shadow)}
 header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:inline-flex;align-items:center;gap:.6rem}
@@ -35,38 +29,30 @@ header .container{display:flex;align-items:center;justify-content:space-between;
 }
 .brand-name{font-weight:800}
 
-/* Replace repeated inline header row styles */
 .header-row{display:flex;align-items:center;gap:1rem}
 
-/* Nav */
 nav ul{list-style:none;display:flex;gap:1rem}
 nav a{padding:.25rem 0;color:var(--muted);font-weight:600;border-bottom:2px solid transparent}
 nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)}
 
-/* Responsive nav toggle (checkbox hack) */
 #nav-toggle{display:none}
 .nav-toggle-label{display:none;cursor:pointer;padding:.4rem;border-radius:8px}
 .nav-toggle-label .bar{display:block;width:22px;height:2px;background:var(--text);margin:3px 0;border-radius:2px}
 @media (max-width:768px){
   .nav-toggle-label{display:inline-grid;place-items:center;margin-left:auto}
-  nav ul{display:none;flex-direction:column;gap:0;padding:.6rem 0;width:100%}
-  nav ul li{padding:.4rem 0}
+  header .container{flex-direction:row;align-items:center}
+  nav ul{display:none;position:absolute;top:calc(100% + 8px);right:1rem;background:var(--panel);box-shadow:var(--shadow);border-radius:8px;padding:.75rem;min-width:180px;max-width:320px;width:min(92vw,320px);z-index:1100;flex-direction:column}
+  nav ul li{padding:.5rem 0;text-align:right}
   #nav-toggle:checked + .nav-toggle-label + nav ul{display:flex}
-  /* ensure header stacks */
-  header .container{flex-direction:column;align-items:flex-start}
 }
 
-/* Buttons */
 .btn{display:inline-block;background:var(--primary);color:#fff;padding:.6rem 1rem;border-radius:8px;font-weight:700;border:none;cursor:pointer}
 .btn:hover{filter:brightness(1.03);transform:translateY(-2px)}
 
-/* Products */
 .product-section{padding:2.5rem 0}
 .product-grid{display:grid;gap:1rem;grid-auto-rows: auto;align-items:stretch}
-/* Desktop: 4 columns */
 @media (min-width:1100px){
   .product-grid{grid-template-columns:repeat(4, 1fr)}
-  /* Make listing card images square on desktop */
   .product-grid .product-card img{
     aspect-ratio:1/1;
     width:100%;
@@ -75,16 +61,13 @@ nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)
     border-radius:8px;
   }
 }
-/* Tablet: 2 columns */
 @media (min-width:600px) and (max-width:1099px){
   .product-grid{grid-template-columns:repeat(2, 1fr)}
 }
-/* Mobile: single column */
 @media (max-width:599px){
   .product-grid{grid-template-columns:1fr;gap:1.25rem}
 }
 
-/* Add consistent left/right gap on small screens */
 @media (max-width:599px){
   .container{padding-left:1rem;padding-right:1rem}
   nav ul{padding-left:1rem;padding-right:1rem}
@@ -97,7 +80,6 @@ nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)
 .product-grid .product-card .product-info h4{font-size:1rem}
 .product-grid .product-card .product-info .price{color:var(--accent);font-weight:800;margin-top:auto}
 
-/* Product detail layout: image left (1:1) and info right */
 .product-page .product-card{
   display:flex;
   gap:1.5rem;
@@ -125,7 +107,6 @@ nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)
   .product-card{margin-bottom:1rem}
 }
 
-/* Forms */
 .content-page{padding:2.5rem 0}
 .contact-form{background:var(--card-bg);padding:1rem;border-radius:8px}
 .form-group{margin-bottom:.75rem}
@@ -133,34 +114,27 @@ nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)
 .form-group input,.form-group textarea{width:100%;padding:.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
 .submit-btn{background:var(--primary);color:#fff;padding:.7rem;border-radius:6px;border:none;width:100%}
 
-/* Footer */
 footer{padding:1.25rem 0;text-align:center;color:var(--muted)}
 
-/* Responsive */
 @media (max-width:768px){
   h2{font-size:1.6rem}
   .product-card img{height:160px}
-  header .container{flex-direction:column;align-items:flex-start}
+  header .container{flex-direction:row;align-items:center}
 }
 
-/* Small animation */
 body{animation:fadeIn .35s ease}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
-/* Hero / Browse section */
-/* CozyKitchen hero */
-#hero{padding:4rem 0;display:flex;align-items:center;justify-content:center;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;color:var(--text);}
+#hero{padding:4rem 0;display:flex;align-items:center;justify-content:center;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;color:var(--text);} 
 .hero-inner{max-width:880px;text-align:center;padding:3rem;background:linear-gradient(180deg, rgba(255,248,240,0.9), rgba(255,248,240,0.85));border-radius:12px}
 .hero-inner h2{font-size:2.2rem;margin-bottom:.5rem;color:var(--text)}
 .hero-inner p{color:var(--muted);margin-bottom:1rem}
 
-/* Ensure hero has horizontal padding on small screens */
 @media (max-width:599px){
   #hero{padding-left:1rem;padding-right:1rem}
   .hero-inner{padding-left:1rem;padding-right:1rem}
 }
 
-/* Make product listing card images square on small screens */
 @media (max-width:599px){
   .product-grid .product-card img{
     width:100%;
