@@ -3,67 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GaeaGrow - Home</title>
+    <title>CozyKitchen - Home</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">🌿 GaeaGrow</a></h1>
+            <div class="header-row">
+                <div class="logo"><a class="brand" href="index.html"><span class="logo-mark">🍳</span><span class="brand-name">CozyKitchen</span></a></div>
+                <input type="checkbox" id="nav-toggle" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            
         </div>
     </header>
 
     <main>
         <section id="hero">
-            <h2>The Future of Indoor Gardening.</h2>
-            <p>We infuse technology with nature to bring you smart, self-sustaining plants that thrive in any environment.</p>
-            <a href="products.html" class="btn">Explore Our Collection</a>
+            <div class="container hero-inner">
+                <h2>Cook Better.</h2>
+                <h2>Live Cozy.</h2>
+                <p>Discover thoughtfully designed kitchen appliances and cookware for everyday meals and weekend feasts.</p>
+                <a href="products.html" class="btn">Shop Kitchen</a>
+            </div>
         </section>
 
         <section class="product-section container">
             <h3>Featured Products</h3>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1596700424143-5241aa176986?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Lumina Ficus">
+                <a class="product-card" href="products/blender.html">
+                    <img src="assets/blender.jpg" alt="Smart Blender">
                     <div class="product-info">
-                        <h4>Lumina Ficus</h4>
-                        <p>A Fiddle Leaf Fig with integrated, self-adjusting grow lights for perfect lighting conditions.</p>
-                        <div class="price">$180</div>
+                        <h4>BlendMate Smart Blender</h4>
+                        <p>High-speed blender with program presets and a durable glass jar for smoothies and soups.</p>
+                        <div class="price">$129</div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1612363295221-263a7c6b940b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aqua Monstera">
+                </a>
+                <a class="product-card" href="products/cookware.html">
+                    <img src="assets/cookware.jpg" alt="Ceramic Cookware Set">
                     <div class="product-info">
-                        <h4>Aqua Monstera</h4>
-                        <p>A Monstera Deliciosa with a self-watering reservoir and smart moisture sensor.</p>
-                        <div class="price">$155</div>
+                        <h4>HearthStone Ceramic Cookware (10pc)</h4>
+                        <p>Durable ceramic non-stick cookware set with ergonomic handles and oven-safe finish.</p>
+                        <div class="price">$249</div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+                <a class="product-card" href="products/airfryer.html">
+                    <img src="assets/airfryer.jpg" alt="Air Fryer">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>CrispPro AirFry 5L</h4>
+                        <p>Compact air fryer with rapid air circulation tech for crispy results with less oil.</p>
+                        <div class="price">$99</div>
                     </div>
-                </div>
+                </a>
+                <a class="product-card" href="products/mixer.html">
+                    <img src="assets/mixer.jpg" alt="ProMix Stand Mixer">
+                    <div class="product-info">
+                        <h4>ProMix Stand Mixer</h4>
+                        <p>5qt professional stand mixer with multiple attachments for baking and mixing.</p>
+                        <div class="price">$299</div>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 GaeaGrow. Smarter Plants, Greener Homes.</p>
+    <p>&copy; 2025 CozyKitchen. Cook Better. Live Cozy.</p>
     </footer>
 </body>
 </html>

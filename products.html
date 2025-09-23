@@ -3,116 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GaeaGrow - Our Products</title>
+    <title>CozyKitchen - Products</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">🌿 GaeaGrow</a></h1>
+            <div class="header-row">
+                <div class="logo"><a class="brand" href="index.html"><span class="logo-mark">🍳</span><span class="brand-name">CozyKitchen</span></a></div>
+                <input type="checkbox" id="nav-toggle" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            
         </div>
     </header>
 
     <main>
         <section class="product-section container">
-            <h2>Our Smart Plant Collection</h2>
+            <h2>Kitchen Essentials</h2>
             <div class="product-grid">
-                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1596700424143-5241aa176986?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Lumina Ficus">
+                <a class="product-card" href="products/blender.html">
+                    <img src="assets/blender.jpg" alt="BlendMate Smart Blender">
                     <div class="product-info">
-                        <h4>Lumina Ficus</h4>
-                        <p>A Fiddle Leaf Fig with integrated, self-adjusting grow lights for perfect lighting conditions.</p>
-                        <div class="price">$180</div>
+                        <h4>BlendMate Smart Blender</h4>
+                        <p>Powerful blender with preset modes for smoothies, soups, and sauces. Easy-clean glass jar.</p>
+                        <div class="price">$129</div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1612363295221-263a7c6b940b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aqua Monstera">
+                </a>
+
+                <a class="product-card" href="products/cookware.html">
+                    <img src="assets/cookware.jpg" alt="HearthStone Ceramic Cookware">
                     <div class="product-info">
-                        <h4>Aqua Monstera</h4>
-                        <p>A Monstera Deliciosa with a self-watering reservoir and smart moisture sensor.</p>
-                        <div class="price">$155</div>
+                        <h4>HearthStone Ceramic Cookware (10pc)</h4>
+                        <p>Premium ceramic non-stick set with ergonomic handles, oven-safe and easy to clean.</p>
+                        <div class="price">$249</div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/airfryer.html">
+                    <img src="assets/airfryer.jpg" alt="CrispPro Air Fryer">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>CrispPro Air Fryer 5L</h4>
+                        <p>Digital 5L air fryer with 8 presets and dishwasher-safe basket for effortless cooking.</p>
+                        <div class="price">$99</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/mixer.html">
+                    <img src="assets/mixer.jpg" alt="ProMix Stand Mixer">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>ProMix Stand Mixer</h4>
+                        <p>Heavy-duty 5qt stand mixer with 10 speeds and multiple attachments for baking and mixing.</p>
+                        <div class="price">$299</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/coffee.html">
+                    <img src="assets/coffee.jpg" alt="BrewMaster Pro Coffee Maker">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>BrewMaster Pro Coffee Maker</h4>
+                        <p>Programmable 12-cup coffee maker with thermal carafe, brew strength control and timer.</p>
+                        <div class="price">$149</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/utensils.html">
+                    <img src="assets/utensils.jpg" alt="Essential Utensils Set">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>Essential Utensils Set</h4>
+                        <p>Complete set of heat-resistant silicone and stainless steel utensils designed for daily use.</p>
+                        <div class="price">$39</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/toaster.html">
+                    <img src="assets/toaster.jpg" alt="CrispLine Toaster">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>CrispLine 4-Slice Toaster</h4>
+                        <p>Even-toasting toaster with adjustable browning, defrost and bagel modes. Sleek stainless finish.</p>
+                        <div class="price">$59</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
+                </a>
+
+                <a class="product-card" href="products/kettle.html">
+                    <img src="assets/kettle.jpg" alt="RapidBoil Kettle">
                     <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
+                        <h4>RapidBoil Electric Kettle</h4>
+                        <p>1.7L stainless steel kettle with boil-dry protection and rapid-boil element for quick hot water.</p>
+                        <div class="price">$49</div>
                     </div>
-             
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591348122394-2c9c0b13bf1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Aero Sansevieria">
-                    <div class="product-info">
-                        <h4>Aero Sansevieria</h4>
-                        <p>A Snake Plant equipped with a silent fan and sensor to actively purify your air.</p>
-                        <div class="price">$130</div>
-                    </div>
-             
-                </div>
-                
+                </a>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 GaeaGrow. Smarter Plants, Greener Homes.</p>
+    <p>&copy; 2025 CozyKitchen. Cook Better. Live Cozy.</p>
     </footer>
 </body>
 </html>
