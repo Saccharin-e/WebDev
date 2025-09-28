@@ -1,14 +1,14 @@
 :root{
   --container-width:1100px;
-  --font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-  --bg:#fbfaf7;
-  --panel:#fff8f2;
+  --font-family: "Roboto", Arial, sans-serif;
+  --bg:#f6f4f1; 
+  --panel:#fff7f0;
   --text:#2b2b2b;
-  --muted:rgba(43,43,43,0.6);
+  --muted:rgba(43,43,43,0.66);
   --primary:#d97706;
   --accent:#f97316;
-  --shadow:0 10px 30px rgba(15,15,15,0.06);
-  --card-bg:#fff;
+  --shadow:0 12px 40px rgba(10,10,10,0.1); 
+  --card-bg:#fff8f3;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -64,15 +64,15 @@ nav a.active,nav a:hover{color:var(--primary);border-bottom-color:var(--primary)
 @media (min-width:600px) and (max-width:1099px){
   .product-grid{grid-template-columns:repeat(2, 1fr)}
 }
-@media (max-width:599px){
+@media (max-width:600px){
   .product-grid{grid-template-columns:1fr;gap:1.25rem}
 }
 
-@media (max-width:599px){
+@media (max-width:600px){
   .container{padding-left:1rem;padding-right:1rem}
   nav ul{padding-left:1rem;padding-right:1rem}
 }
-.product-card{background:var(--card-bg);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);transition:transform .16s ease;display:block}
+.product-card{background:var(--card-bg);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);transition:transform .16s ease;display:block;border:1px solid rgba(15,15,15,0.06)}
 .product-card:hover{transform:translateY(-6px)}
 .product-grid .product-card{display:flex;flex-direction:column;height:100%}
 .product-grid .product-card img{width:100%;height:200px;object-fit:cover;flex:0 0 auto}
@@ -130,12 +130,12 @@ body{animation:fadeIn .35s ease}
 .hero-inner h2{font-size:2.2rem;margin-bottom:.5rem;color:var(--text)}
 .hero-inner p{color:var(--muted);margin-bottom:1rem}
 
-@media (max-width:599px){
+@media (max-width:600px){
   #hero{padding-left:1rem;padding-right:1rem}
   .hero-inner{padding-left:1rem;padding-right:1rem}
 }
 
-@media (max-width:599px){
+@media (max-width:600px){
   .product-grid .product-card img{
     width:100%;
     aspect-ratio:1/1;
