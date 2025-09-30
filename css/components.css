@@ -13,6 +13,19 @@
 
 .contact-form{background:var(--card-bg);padding:var(--pad-lg);border-radius:var(--radius-md)}
 .form-group{margin-bottom:.75rem}
-.form-group label{display:block;margin-bottom:.4rem;font-weight:700}
-.form-group input,.form-group textarea{width:100%;padding:var(--pad-sm);border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.form-group label{display:block;margin-bottom:.4rem;font-weight:700; }
+.form-group input,.form-group textarea{width:100%;padding:var(--pad-sm);border-radius:var(--radius-sm);border:1px solid rgba(43,43,43,0.15);background:rgba(255,255,255,0.55);color:var(--text);backdrop-filter:blur(2px);transition:background .2s ease,border-color .2s ease,box-shadow .2s ease}
+/* Placeholder styling */
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(43,43,43,0.5);font-size:.9rem}
 .submit-btn{background:var(--primary);color:#fff;padding:var(--pad-sm);border-radius:var(--radius-sm);border:none;width:100%}
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+.form-group input:focus,
+.form-group textarea:focus{
+	outline:2px solid var(--primary);
+	outline-offset:2px;
+	border-color:var(--primary);
+	background:#fff;
+	box-shadow:0 0 0 3px rgba(255,153,28,0.25);
+}
