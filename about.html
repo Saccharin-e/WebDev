@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyKitchen - About Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,6 +32,10 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="header-cart-button" id="cart-toggle">
+                    <span>🛒 Cart</span>
+                    <span class="header-cart-count" id="cart-count">0</span>
+                </div>
             </div>
             
         </div>
@@ -45,5 +55,6 @@
     <footer>
     <p>&copy; 2025 CozyKitchen. Cook Better. Live Cozy.</p>
     </footer>
+    <script src="js/cart.js"></script>
 </body>
 </html>

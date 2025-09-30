@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyKitchen - HearthStone Ceramic Cookware</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -42,8 +49,8 @@
                     </ul>
                     <div class="price">$249</div>
                     <div class="buy-actions">
-                        <a class="btn" href="#">Buy Now</a>
-                        <a href="../contact.html" class="muted">Contact for bulk</a>
+                        <button class="btn add-to-cart" data-id="cookware-001">Add to Cart</button>
+                        <a href="../contact.html" class="muted bulk-outline">Contact for bulk</a>
                     </div>
                 </div>
             </div>
@@ -52,5 +59,6 @@
     <footer>
         <p>&copy; 2025 CozyKitchen. Cook Better. Live Cozy.</p>
     </footer>
+<script src="../js/cart.js"></script>
 </body>
 </html>
